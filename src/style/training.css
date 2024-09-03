@@ -1,0 +1,215 @@
+.train-bread {
+  padding: 4rem 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background: linear-gradient(to right, #f1bc8e, #f0b581); */
+  background: linear-gradient(
+    to right,
+    rgba(240, 181, 129, 0.5),
+    rgba(241, 188, 142, 0.3)
+  );
+}
+.train-bread-text {
+  font-size: 2.5rem;
+  max-width: 760px;
+  margin-bottom: 0.4rem;
+}
+.train-enroll {
+  padding: 1rem 2rem;
+  background-color: var(--brand-color);
+  border: var(--brand-color);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.train-enroll:hover {
+  border: 1px solid var(--brand-color);
+  background-color: #fff;
+  color: var(--brand-color);
+}
+
+.train-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e8e8e8;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.train-idata {
+  max-width: 369px;
+  min-width: 250px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.train-details {
+  padding: 1rem 0;
+  max-width: 97%;
+  margin: 0 auto;
+}
+
+.train-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  /* min-width: 500px; */
+}
+.train-iday {
+  padding: 0.5rem;
+  background-color: var(--brand-color);
+  color: #fff;
+  margin: 0;
+  border-color: #dd7c28;
+  cursor: pointer;
+}
+.train-iday:hover {
+  background-color: #da8032;
+  cursor: pointer;
+}
+.train-day-active.train-iday {
+  background-color: #f6f4f4;
+  color: #000;
+  border: 1px solid #e0d1d1;
+}
+.train-iday-data {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  position: relative;
+  left: 1rem;
+  flex-wrap: wrap;
+}
+
+.train-act-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  width: auto;
+  letter-spacing: 1px;
+}
+.train-act-others {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  left: 1.5rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+/* .train-act-others::first-letter {
+  text-transform: capitalize !important;
+} */
+.train-day-data-cnt {
+  background-color: #f6f4f4;
+  padding: 1rem 0;
+}
+.download-icon {
+  width: 15px;
+  margin-right: 0.35rem;
+}
+.train-download {
+  width: 95%;
+  padding: 1.5rem 0.5rem;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  background-color: var(--brand-color);
+}
+
+.train-download > button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--brand-color);
+  margin: 0.5rem auto;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.train-download > button:hover {
+  background-color: var(--brand-color);
+  color: #eae3e3;
+  border-color: #eae3e3;
+  transition: all 0.3s ease-in-out;
+}
+.whyChoose {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #f6f4f4;
+}
+.wcu-t1 {
+  color: #ababab;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.85rem;
+}
+.wcu-t2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.wcu-card {
+  display: flex;
+  padding: 1rem 0.7rem;
+  width: 320px;
+  height: 200px;
+  background-color: #f6f4f4;
+  border-radius: 5px;
+}
+.wcu-card > img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.wcu-card > div {
+  text-align: left;
+  margin-left: 30px;
+}
+.wcu-card > div > h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+.wcu-card:hover {
+  transform: translateY(-10px);
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 5px 1px #eae3e3;
+}
+.wcu-cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.train-requirement {
+  width: 97%;
+  margin: auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+.train-requirement img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.tr-1 {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff4e2;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* @media (max-width:986px){
+
+} */

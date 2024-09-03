@@ -1,0 +1,36 @@
+.dropdownProd {
+  --brand-color: #e97f23;
+  --logo-bg-blue: #4560af;
+  --dark-blue-bg: #1b1525;
+  --text-color-1: #fff;
+  --text-color-2: #000;
+  position: absolute;
+  top: 3.8rem;
+  padding: 0.3rem 0.3rem;
+  min-width: 12rem;
+  border: 1px solid black;
+  background-color: var(--text-color-1);
+  z-index: 7;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(233, 127, 35, 0.5);
+}
+
+.dropdown-list p {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text-color-2);
+  z-index: 9;
+  /* padding: 0.4rem 0.5rem; */
+}
+.dropdown-list {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--text-color-1);
+  z-index: 8;
+}
+.dropdown-list:hover {
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+.dropdown-list:hover > p {
+  color: var(--text-color-1);
+}

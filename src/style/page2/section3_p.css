@@ -1,0 +1,107 @@
+/* .section3-p {
+  --brand-color: #feba12;
+  --logo-bg-blue: #4560af;
+  --dark-blue-bg: #1b1525;
+  --text-color-1: #fff;
+  --text-color-3: #aaa;
+
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.sec3-p-left {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.sec3-p-left > div {
+  width: 46%;
+  padding: 2rem 0.5rem 1rem 2rem;
+  background-color: var(--dark-blue-bg);
+  color: var(--text-color-1);
+}
+.sec3-p-left > div > i {
+  font-size: 3rem;
+}
+.bold {
+  font-size: 3rem;
+  font-weight: 500;
+  display: flex;
+  align-items: c;
+}
+
+.sec3-p-right {
+  width: 30%;
+  background-color: var(--text-color-3);
+  padding: 1.5rem;
+}
+.sec3-p-right > p {
+  margin: 1.2rem 0;
+}
+.s3p-btn-cnt {
+  position: relative;
+}
+.s3p-btn-cnt button {
+  width: 50%;
+  height: 2.6rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.s3p-btn-cnt span {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: var(--text-color-1);
+  padding: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.15rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 10px var(--text-color-3);
+}
+.s3p-btn-cnt > :first-child {
+  background-color: var(--brand-color);
+}
+.s3p-btn-cnt > :last-child {
+  background-color: var(--dark-blue-bg);
+  color: var(--text-color-1);
+}
+@media (max-width: 800px) {
+  .section3-p {
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2% 2.5%;
+  }
+  
+}
+
+@media (max-width: 678px) {
+  .section3-p {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .sec3-p-left {
+    width: 100% !important;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .sec3-p-right {
+    width: 100%;
+    
+  }
+}
+@media (max-width: 380px) {
+  .sec3-p-left > div {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+} */

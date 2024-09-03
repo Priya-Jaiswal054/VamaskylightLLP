@@ -1,0 +1,35 @@
+.test-top {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 1.2rem 1rem 0.1rem;
+}
+
+.carousel-tesimonial {
+  --swiper-navigation-sides-offset: 0;
+  --swiper-navigation-sides-offset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+html:root {
+  --swiper-theme-color: #1acf8f !important;
+}
+.carousel2 {
+  display: flex;
+  align-items: center;
+  padding: 5% 0;
+}
+.carousel-tesimonial div,
+.carousel2 div {
+  padding: 0.4rem 1%;
+}
+
+.carousel-tesimonial img {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 1rem;
+}

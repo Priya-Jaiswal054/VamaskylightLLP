@@ -1,0 +1,21 @@
+.footer2 {
+  padding: 0.5% 0.3rem;
+  background-color: #312c3a;
+  color: var(--text-color-1);
+  font-size: 0.9rem;
+}
+.footer2 > div {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.footer2 > div > p:first-child {
+  margin-bottom: 0.5rem;
+}
+/* .footer2 p {
+  font-size: 1rem;
+}
+
+.dev {
+  color: var(--brand-color);
+} */

@@ -1,0 +1,102 @@
+.contact {
+  background-image: url("../img/section1/secbgImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.contact1 {
+  width: 45%;
+}
+
+.Contact-Right-Side {
+  width: 45%;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+.contact-who {
+  display: flex;
+  align-items: center;
+}
+.contact-who > img {
+  margin-right: 0.5rem;
+}
+
+.contact1 h2 {
+  margin: 0.4rem 0 1rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.contact1 .form input {
+  padding: 0.7rem;
+  width: 48%;
+  margin: 0.4rem 0.5%;
+
+  border: none;
+}
+
+.contact1 .form textarea {
+  width: 98%;
+  margin: auto;
+  height: 5rem;
+  border: none;
+  padding: 0.7rem;
+  margin-top: 10px;
+}
+
+.contact1 .form button {
+  background-color: var(--brand-color);
+  border: none;
+  padding: 15px 20px 15px 20px;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+.contact1 .form button:hover {
+  color: var(--brand-color);
+  background-color: #fff;
+  border:1px solid var(--brand-color);
+}
+
+.Contact-Right-Side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Contact-Right-Side .card {
+  background-color: white;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.Contact-Right-Side img {
+  margin-right: 1.25rem;
+}
+
+@media (max-width: 678px) {
+  .contact > div {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+  .contact1 button {
+    width: 100% !important;
+    margin: auto;
+  }
+  .contact1 .form input {
+    padding: 0.7rem;
+    width: 98%;
+    margin: 0.4rem auto;
+  }
+}

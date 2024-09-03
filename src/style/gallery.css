@@ -1,0 +1,10 @@
+.Gallery {
+  padding: 0 0.2rem 3rem;
+}
+
+.gallery-top {
+  max-width: 500px;
+  margin: 1.3rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}

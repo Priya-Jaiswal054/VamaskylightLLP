@@ -1,0 +1,111 @@
+.section2 {
+  width: 100%;
+  min-height: 70vh;
+}
+.s2-top {
+  background-image: url("../img/drone-skyline.jpg");
+  background-position: center 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 42vh;
+  display: flex;
+  align-items: stretch;
+}
+.s2-top-inner {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.qlt {
+  width: 85%;
+  max-width: 28rem;
+  min-height: 25vh;
+  margin: auto;
+  color: var(--text-color-1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85rem 0;
+  position: relative;
+}
+.qlt > h2 {
+  font-weight: 500;
+}
+.qlt p {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0 0.7rem;
+}
+.line {
+  border: 2px solid var(--brand-color);
+  width: 15%;
+}
+.qlt > div {
+  width: 100%;
+  min-height: 10vh;
+  padding: 0.85rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s2-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem 0.2rem;
+  margin-top: -8rem;
+  flex-wrap: wrap;
+}
+.s2-list {
+  width: 30%;
+  max-width: 300px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--text-color-1);
+  height: 20rem;
+  box-shadow: 3px 3px 5px #aaa;
+  margin: 1%;
+}
+
+.s2-list > h2 {
+  margin-top: -1.2rem;
+}
+
+.dual-line {
+  width: 100%;
+  max-width: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line1 {
+  width: 2rem;
+  border: 1px solid var(--brand-color);
+}
+.dual-line > p {
+  margin: 0 0.7rem;
+  color: var(--brand-color);
+  cursor: pointer;
+}
+.s2-list-icons {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--brand-color);
+}
+@media (max-width: 620px) {
+  .s2-list {
+    width: 90%;
+  }
+}

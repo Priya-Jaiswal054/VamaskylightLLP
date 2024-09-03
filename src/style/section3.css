@@ -1,0 +1,51 @@
+.sec3-outer {
+  --brand-color: #e97f23;
+  --dark-blue-bg: #1b1525;
+  --text-color-1: #fff;
+  width: 100%;
+  background-image: url("../img/section3/sec3bg.jpg");
+  min-height: 50vh;
+  display: flex;
+  align-items: stretch;
+  background-size: cover;
+  background-position: center 40%;
+  background-attachment: fixed;
+}
+.sec3-inner {
+  padding: 2.6rem 1rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  text-align: center;
+  color: var(--text-color-1);
+}
+.sec3-inner > * {
+  max-width: 50%;
+  margin: 0.6rem auto;
+}
+
+.sec3-inner h5 {
+  color: var(--brand-color);
+}
+.sec3-inner > p {
+  margin: 0.8rem auto;
+}
+
+.sec3-inner button {
+  background-color: var(--brand-color);
+  padding: 15px 30px 15px 30px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--brand-color);
+}
+
+.sec3-inner button:hover {
+  color: var(--brand-color);
+  background-color: var(--text-color-1);
+}
+@media (max-width: 678px) {
+  .sec3-inner > * {
+    max-width: 95%;
+    margin: auto;
+  }
+}

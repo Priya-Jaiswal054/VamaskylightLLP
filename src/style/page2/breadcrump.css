@@ -1,0 +1,51 @@
+.breadcrump {
+  width: 100%;
+  background-image: url("../../img/breadcrump.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bread-inner {
+  width: 100%;
+  padding: 3rem 0.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-1);
+  background-color: rgba(202, 133, 72, 0.3);
+}
+
+.horizontal-line {
+  width: 2rem;
+  border: 2px solid var(--brand-color);
+}
+
+.bread-inner > p {
+  max-width: 40rem;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: var(--text-color-1);
+}
+
+.bread-nav {
+  margin-top: 1rem;
+  border: 1px solid var(--text-color-1);
+  padding: 0.25rem 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bread-nav > a {
+  color: var(--text-color-1);
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.active-bread,
+.bread-nav > a:hover {
+  color: var(--brand-color) !important;
+}

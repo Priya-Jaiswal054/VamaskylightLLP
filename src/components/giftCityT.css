@@ -1,0 +1,29 @@
+.otherImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.otherImages > img {
+  width: 45%;
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 5px #aaa;
+  transition: all ease-in-out 0.2s;
+}
+.firstimg {
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 7px #aaa;
+  transition: all ease-in-out 0.2s;
+}
+.otherImages > img:hover,
+.firstimg:hover {
+  box-shadow: 2px 2px 14px #aaa;
+  transform: translateY(-0.7rem);
+}
+@media (max-width: 768px) {
+  .otherImages > img {
+    width: 85%;
+  }
+  .sec2-prod-left.giftcity {
+    text-align: center;
+  }
+}
