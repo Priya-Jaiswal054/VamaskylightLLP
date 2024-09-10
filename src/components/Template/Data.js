@@ -180,20 +180,19 @@ const th16BreadProp = {
   arr: ["Home", "Products", "TH16L"],
 };
 const th16Pts = [
-  "16-liter tank capacity",
-  " Up to 20 minutes of flight time.",
-  "3-acre spraying capacity on a single charge.",
-  "6 minutes per acre spraying capability.",
-  "6-teeject carbon fibre high-precision sprayer.",
-  "Spraying level adjustment facility.",
-  "Fast charging support with a full charging time of 45 minutes.",
-  "Terrain following capability",
-  "Anti-collision object avoidance with built-in radar.",
-  "Collision safety and auto height adjustment facility with terrain radar.",
-  "Autonomous flying mission and spraying capability.",
-  "Voice alarm-enabled Ground Control System (GCS).",
-  "Real-time FPV camera with 720p video feed.",
-  "High-precision take-off and landing facility.",
+  "Structure: Hexacopter Structure, FOS = 3",
+  "Foldable Size: 990 mm x 1120 mm x 630 mm",
+  "Flight Mode: Fully Autonomous, Loiter Mode",
+  "Liquid Tank:16-liter tank capacity",
+  "Battery Fly Time: Up to 20 minutes with payload.",
+  "Return to Launch (RTL): Triggers for Empty Tank, Battery Drained, Mission Complete, Geofence Breached.",
+  "Live Video Streaming on GCS: 2 MP HD camera with high lumens LED lights for low-light navigation",
+  "Nozzles: 6x TeeJet High Pressure Flat Spray Brass Sprayer with Carbon Fiber Body",
+  "RADAR-based Collision Avoidance: Detects obstacles in both front and rear directions, reroutes path",
+  "RADAR-based Terrain Following: Maintains constant spray height up to 10 meters, detects variable crop heights.",
+  "Maximum Height: 92 meters (300 feet) above ground levelMaximum Height: 92 meters (300 feet) above ground level.",
+  "Battery capacity: 2x 22000 mAh (6S) LiPo 25C.",
+  "DGCA Approved Model: Yes.",
 ];
 export const th_agri_16 = {
   breadProp: th16BreadProp,
@@ -207,7 +206,7 @@ export const th_agri_16 = {
   text2: "",
   img2: "DGCA TYPE CERTIFIED-01.jpg",
   img3: "",
-  // pdf1: "Manual.pdf",
+  pdf1: "Manual.pdf",
   isService: false,
 };
 const th10BreadProp = {

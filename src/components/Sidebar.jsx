@@ -220,7 +220,7 @@ export default function Sidebar({ sidebar, showSidebar }) {
               ARTICLES & EVENTS
             </Link>
 
-            <Link
+            {/* <Link
               className="side-list"
               to="/training"
               onClick={() => {
@@ -228,6 +228,15 @@ export default function Sidebar({ sidebar, showSidebar }) {
               }}
             >
               TRAINING
+            </Link> */}
+            <Link
+              className="side-list"
+              to="/career"
+              onClick={() => {
+                showSidebar(!sidebar);
+              }}
+            >
+              CAREER
             </Link>
 
             <Link
@@ -247,6 +256,15 @@ export default function Sidebar({ sidebar, showSidebar }) {
               }}
             >
               POST
+            </Link>
+            <Link
+              className="side-list"
+              to="/faq"
+              onClick={() => {
+                showSidebar(!sidebar);
+              }}
+            >
+              FAQ
             </Link>
             <Link
               className="side-list"

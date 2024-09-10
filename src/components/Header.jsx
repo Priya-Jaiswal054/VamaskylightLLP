@@ -39,9 +39,12 @@ export default function Header({ sidebar, showSidebar }) {
     setShowLinkedIn(!showLinkedIn); // Toggle LinkedIn visibility
     resetActiveStates();
   }
-
   return (
     <>
+      {/* <div className="scrolling-text-container">
+        <div className="scrolling-text">We are DGCA verified</div>
+      </div> */}
+
       <div className="header">
         <div className="icon">
           <NavLink to="/">
@@ -124,8 +127,7 @@ export default function Header({ sidebar, showSidebar }) {
               ARTICLES & EVENTS
             </NavLink>
           </div>
-
-          <div className="nav-list">
+          {/* <div className="nav-list">
             <NavLink
               id="training"
               to="/training"
@@ -134,8 +136,17 @@ export default function Header({ sidebar, showSidebar }) {
             >
               TRAINING
             </NavLink>
+          </div> */}{" "}
+          <div className="nav-list">
+            <NavLink
+              id="career"
+              to="/career"
+              activeClassName="colorBlue"
+              onClick={handleNavLinkClick}
+            >
+              CAREER
+            </NavLink>
           </div>
-
           <div className="nav-list">
             <NavLink
               id="rtpo"
@@ -156,7 +167,16 @@ export default function Header({ sidebar, showSidebar }) {
               POST
             </NavLink>
           </div>
-
+          <div className="nav-list">
+            <NavLink
+              id="faq"
+              to="/faq"
+              activeClassName="colorBlue"
+              onClick={handleNavLinkClick}
+            >
+              FAQ
+            </NavLink>
+          </div>
           <NavLink to="/contact">
             <button className="btn-contactUs">CONTACT US</button>
           </NavLink>

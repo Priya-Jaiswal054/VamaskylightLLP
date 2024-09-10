@@ -1,5 +1,5 @@
 /* Thin div above the navbar */
-.announcement-bar {
+.topbar {
   width: 100%;
   background-color: #3e2f2a;
   color: #fff;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 0.5rem 0.6rem;
-  max-height: 80px;
+  max-height: 95px;
   background-color: var(--text-color-1);
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -64,7 +64,7 @@
   box-shadow: 0 0 18px var(--logo-bg-blue);
 }
 .icon {
-  max-width: 12%;
+  max-width: 10%;
   z-index: 3;
 }
 .icon img {

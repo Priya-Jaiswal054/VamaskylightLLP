@@ -8,19 +8,25 @@ import BreadcrumpTemp from "../Template/BreadcrumpTemp";
 import brochure1 from "../../img/brochure-1.png";
 import brochure2 from "../../img/brochure-2.png";
 // import dgca from "../../img/Service-Product/DGCA TYPE CERTIFIED-01.jpg";
-// import tc from "../../img/Service-Product/tc.jpg";
+import tc from "../../img/Service-Product/tc.jpg";
+import { useLocation } from "react-router-dom";
+
 export default function ServiceTemplate({ props }) {
   const [ref, inView] = useInView({
     triggerOnce: true, // Trigger animation only once when it comes into view
   });
-  // const handleDownload = () => {
-  //   const link = document.createElement("a");
-  //   link.href = "../public/ User Manual.pdf";
-  //   link.download = "User Manual.pdf";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const location = useLocation();
+  const is16LDronePage =
+    location.pathname === "/thea-agriculture-drone-16-litres";
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = require(`../../img/Service-Product/${props.pdf1}`);
+    link.download = props.pdf1; // The file name for the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   function NumberAnimation({ n }) {
     const { number } = useSpring({
@@ -43,6 +49,11 @@ export default function ServiceTemplate({ props }) {
               src={require(`../../img/Service-Product/${props.img}`)}
               alt="drone-footage"
             />
+            {props.pdf1 && (
+              <button onClick={handleDownload} className="pdf-download-btn">
+                Download Manual
+              </button>
+            )}
           </div>
 
           <div className="sec2-prod-left">
@@ -66,7 +77,7 @@ export default function ServiceTemplate({ props }) {
               })}
             </ul>
           </div>
-          <div className="sec3-p-left" style={{ marginTop: "1.5rem" }}>
+          {/* <div className="sec3-p-left" style={{ marginTop: "1.5rem" }}>
             <div className="s3pl-one" ref={ref}>
               <i class="fa-brands fa-phoenix-squadron"></i>
               <p className="bold">
@@ -82,7 +93,7 @@ export default function ServiceTemplate({ props }) {
               </p>
               <p>Happy Customers</p>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="tc-dgca">
             <img src={dgca} className="imgdgca" /> */}
@@ -91,7 +102,7 @@ export default function ServiceTemplate({ props }) {
           <div className="s4p-inner">
             {props.text2 ? <p>{props.text2}</p> : ""}
 
-            <div
+            {/* <div
               className={
                 props.img3 === "" ? "s4p-img-cnt single" : "s4p-img-cnt"
               }
@@ -109,7 +120,7 @@ export default function ServiceTemplate({ props }) {
                   <img src={props.img2} alt="" />
                 </>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="asp-right">
@@ -136,16 +147,62 @@ export default function ServiceTemplate({ props }) {
                 </p>
               </div>
             </div>
-            <div className="sec3-p-right">
+            {/* <div className="sec3-p-right">
               <img src={brochure1} alt="" />
               <img src={brochure2} alt="" />
-              {/* <img src={tc} className="imgtc" alt="" /> */}
-            </div>
-            {/* <div>
-              <button onClick={handleDownload}>Download PDF</button>
+              <img src={tc} alt="" />
             </div> */}
+            {is16LDronePage && (
+              <div className="sec3-p-right">
+                <img src={brochure1} alt="Brochure 1" />
+                <img src={brochure2} alt="Brochure 2" />
+                <img src={tc} alt="Type Certificate" />
+              </div>
+            )}
           </div>
         </div>
+        <a
+          href="https://wa.me/918320844583" // Replace with your WhatsApp number, including the country code
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-icon"
+        >
+          <i className="fab fa-whatsapp whats-app "></i>
+        </a>
+        <style jsx>{`
+          .whatsapp-icon {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 999;
+          }
+          .whats-app {
+            margin-top: 16px;
+          }
+
+          /* for mobile */
+          @media screen and (max-width: 767px) {
+            .whats-app {
+              margin-top: 10px;
+            }
+
+            .whatsapp-icon {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );

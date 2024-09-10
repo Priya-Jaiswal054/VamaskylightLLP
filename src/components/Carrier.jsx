@@ -1,14 +1,39 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import "../style/page2/allSectionP2.css";
 import BreadcrumpTemp from "./Template/BreadcrumpTemp";
 import Section4 from "./Section4.jsx";
 import "../style/carrier.css";
 import carrier from "../img/carrier/drone_pilot.jpg";
+import emailjs from "emailjs-com";
 
 export default function Carrier() {
-  const [ans0, setAns0] = useState(true);
-  const [ans1, setAns1] = useState(false);
-  const [ans2, setAns2] = useState(false);
+  // const [ans0, setAns0] = useState(true);
+  // const [ans1, setAns1] = useState(false);
+  // const [ans2, setAns2] = useState(false);
+  // const CarrierForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_223oiuf",
+        "__ejs-test-mail-service__",
+        form.current,
+        "email_UbNKIqZpuPyeo3S8Vwr9b6SG"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message Sent Successfully");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to Send Message");
+        }
+      );
+  };
 
   const breadProp = {
     title: "Career",
@@ -29,7 +54,7 @@ export default function Carrier() {
         <div className="asp-left">
           <div className="prod-img">
             <img src={carrier} alt="" className="carrier-image" />
-            <form className="carrier-form">
+            {/* <form className="carrier-form">
               <input
                 type="text"
                 id="name"
@@ -58,10 +83,49 @@ export default function Carrier() {
               />
 
               <div className="carrier-file">
-                <label for="myfile" className="custom-file-upload"><i className="fa fa-cloud-upload"></i> Upload Resume</label>
+                <label for="myfile" className="custom-file-upload">
+                  <i className="fa fa-cloud-upload"></i> Upload Resume
+                </label>
                 <input type="file" id="myfile" name="myfile" />
               </div>
 
+              <button type="submit">Submit Now</button>
+            </form> */}
+            <form ref={form} className="carrier-form" onSubmit={sendEmail}>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="Email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="tel"
+                id="Phone Number"
+                name="number"
+                placeholder="Your Phone Number"
+                required
+              />
+              <input
+                type="text"
+                id="Position"
+                name="position"
+                placeholder="Your Position"
+                required
+              />
+              <div className="carrier-file">
+                <label htmlFor="myfile" className="custom-file-upload">
+                  <i className="fa fa-cloud-upload"></i> Upload Resume
+                </label>
+                <input type="file" id="myfile" name="myfile" />
+              </div>
               <button type="submit">Submit Now</button>
             </form>
           </div>
@@ -89,7 +153,7 @@ export default function Carrier() {
                 </p>
               </div>
             </div>
-            <div className="sec3-p-right">
+            {/* <div className="sec3-p-right">
               <h2>Brochure</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -100,12 +164,54 @@ export default function Carrier() {
                 <span>Or</span>
                 <button>Discover</button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <Section4 />
-      <div className="faqs  shadow">
+      <a
+        href="https://wa.me/918320844583" // Replace with your WhatsApp number, including the country code
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-icon"
+      >
+        <i className="fab fa-whatsapp whats-app "></i>
+      </a>
+      <style jsx>{`
+        .whatsapp-icon {
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25d366;
+          color: #fff;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 999;
+        }
+        .whats-app {
+          margin-top: 16px;
+        }
+
+        /* for mobile */
+        @media screen and (max-width: 767px) {
+          .whats-app {
+            margin-top: 10px;
+          }
+
+          .whatsapp-icon {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 10px;
+            font-size: 22px;
+          }
+        }
+      `}</style>
+      {/* <div className="faqs  shadow">
         <h2>Frequently Asked Questions </h2>
         <p>
           We have compiled answers of commonly asked questions regarding Remote
@@ -165,7 +271,7 @@ export default function Carrier() {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

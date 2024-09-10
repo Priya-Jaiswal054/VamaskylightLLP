@@ -3,8 +3,8 @@
 
   margin: 1rem auto;
   padding: 1rem;
-  border-top: 1px solid #c4c4ce;
-  box-shadow: 0 0 3px #aaa;
+  /* border-top: 1px solid #c4c4ce;
+  box-shadow: 0 0 3px #aaa; */
   min-height: 50vh;
   display: flex;
   flex-direction: column;

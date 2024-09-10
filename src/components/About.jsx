@@ -48,7 +48,8 @@ export default function About() {
     photo: abhishekImage,
     name: "Abhishek Nathani",
     designation: "CEO",
-    para: "Abhishek Nathani leads Vama Skylight with a focus on strategic decision-making and long-term planning. He provides leadership, sets the company's overall direction, and manages stakeholder relationships. His involvement in critical projects or initiatives ensures that the company stays aligned with its goals.",
+    // para: "Abhishek Nathani leads Vama Skylight with a focus on strategic decision-making and long-term planning. He provides leadership, sets the company's overall direction, and manages stakeholder relationships. His involvement in critical projects or initiatives ensures that the company stays aligned with its goals.",
+    para: "Abhishek Nathani leads Vama Skylight, focusing on strategic decisions, long-term planning, and stakeholder management.. His involvement in critical projects or initiatives ensures that the company stays aligned with its goals.",
   };
 
   return (
@@ -85,7 +86,7 @@ export default function About() {
               organizations of all sizes.
             </div>
           </div>
-          <div className="v-box">
+          {/* <div className="v-box">
             <img src={telescope} alt="img" />
             <i className="v-arrow fa-solid fa-chevron-down"></i>
             <div className="vision-t">
@@ -97,7 +98,7 @@ export default function About() {
               We are committed to delivering high-quality products and services
               that meet the needs of our clients.
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="our-team">
           <div className="test-top">
@@ -109,7 +110,7 @@ export default function About() {
           </div>
 
           <div className="carousel-tesimonial">
-            <Swiper
+            {/* <Swiper
               spaceBetween={20}
               loop={true}
               centeredSlides={true}
@@ -132,38 +133,38 @@ export default function About() {
                   slidesPerView: 3,
                 },
               }}
-            >
-              {/* <SwiperSlide> */}
-              {/* <div className="image">
+            > */}
+            {/* <SwiperSlide> */}
+            {/* <div className="image">
               <TestimonialCard details={NiteshMundra} />
             </div> */}
-              {/* </SwiperSlide> */}
+            {/* </SwiperSlide> */}
 
-              <SwiperSlide>
-                {/* <div className="image">
+            {/* <SwiperSlide> */}
+            {/* <div className="image">
               <TestimonialCard details={nikunjBajoria} />
             </div> */}
-                <div className="image">
-                  <TestimonialCard details={abhisheknathani} />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="image">
-                  <TestimonialCard details={ankurSomani} />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="image">
-                  <TestimonialCard details={NiteshMundra} />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="image">
-                  <TestimonialCard details={nikunjBajoria} />
-                </div>
-              </SwiperSlide>
-              {/* </SwiperSlide> */}
-            </Swiper>
+            <div className="image">
+              <TestimonialCard details={abhisheknathani} />
+            </div>
+            {/* </SwiperSlide> */}
+            {/* <SwiperSlide> */}
+            <div className="image">
+              <TestimonialCard details={ankurSomani} />
+            </div>
+            {/* </SwiperSlide> */}
+            {/* <SwiperSlide> */}
+            <div className="image">
+              <TestimonialCard details={NiteshMundra} />
+            </div>
+            {/* </SwiperSlide> */}
+            {/* <SwiperSlide> */}
+            <div className="image">
+              <TestimonialCard details={nikunjBajoria} />
+            </div>
+            {/* </SwiperSlide> */}
+            {/* </SwiperSlide> */}
+            {/* </Swiper> */}
           </div>
         </div>
 
@@ -199,7 +200,49 @@ export default function About() {
           </div>
         </div>
 
-        <Section3 />
+        {/* <Section3 /> */}
+        <a
+          href="https://wa.me/918320844583" // Replace with your WhatsApp number, including the country code
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-icon"
+        >
+          <i className="fab fa-whatsapp whats-app "></i>
+        </a>
+        <style jsx>{`
+          .whatsapp-icon {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 999;
+          }
+          .whats-app {
+            margin-top: 16px;
+          }
+
+          /* for mobile */
+          @media screen and (max-width: 767px) {
+            .whats-app {
+              margin-top: 10px;
+            }
+
+            .whatsapp-icon {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );

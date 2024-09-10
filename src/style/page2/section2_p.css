@@ -1,7 +1,8 @@
 .section2-prod {
   --brand-color: #feba12;
   --logo-bg-blue: #4560af;
-  --dark-blue-bg: #1b1525;
+  /* --dark-blue-bg: #1b1525; */
+  /* background-color: whitesmoke; */
   --text-color-1: #fff;
   --text-color-3: #aaa;
   margin: 1.5rem auto;
@@ -12,7 +13,7 @@
   max-width: 1000px;
 }
 .sec2-prod-left-about {
-  width: 65%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

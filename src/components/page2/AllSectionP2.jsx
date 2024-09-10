@@ -136,7 +136,8 @@ export default function AllSectionP2() {
               </p>
             </div>
           </div>
-          <div className="sec3-p-right">
+
+          {/* <div className="sec3-p-right">
             <h2>Brochure</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -147,7 +148,7 @@ export default function AllSectionP2() {
               <span>Or</span>
               <button>Discover</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

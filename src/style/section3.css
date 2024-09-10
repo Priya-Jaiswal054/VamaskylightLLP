@@ -3,7 +3,7 @@
   --dark-blue-bg: #1b1525;
   --text-color-1: #fff;
   width: 100%;
-  background-image: url("../img/section3/sec3bg.jpg");
+  /* background-image: url("../img/section3/sec3bg.jpg"); */
   min-height: 50vh;
   display: flex;
   align-items: stretch;
@@ -14,10 +14,10 @@
 .sec3-inner {
   padding: 2.6rem 1rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-
+  /* background-color: rgb(151, 241, 241); */
+  background-color: whitesmoke;
   text-align: center;
-  color: var(--text-color-1);
+  /* color: var(--text-color-1); */
 }
 .sec3-inner > * {
   max-width: 50%;

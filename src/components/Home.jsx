@@ -37,37 +37,59 @@ export default function Home() {
       <div className="safety">
         <img src={safety} alt="Safety" />
       </div>
-      <Faqs />
+      {/* <Faqs /> */}
       <Section3 />
 
       {/* WhatsApp Icon */}
-      <a
+      {/* <a
         href="https://wa.me/8320844583" // Replace with your WhatsApp number
+        target="_blank"
+        // rel="noopener noreferrer"
+        className="whatsapp-icon"
+      >
+        <i className="fab fa-whatsapp"></i>
+      </a> */}
+      {/* WhatsApp Icon */}
+      <a
+        href="https://wa.me/918320844583" // Replace with your WhatsApp number, including the country code
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-icon"
       >
-        <i className="fab fa-whatsapp"></i>
+        <i className="fab fa-whatsapp whats-app "></i>
       </a>
-
       <style jsx>{`
         .whatsapp-icon {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
           background-color: #25d366;
-          color: white;
-          padding: 10px;
-          border-radius: 30%;
-          font-size: 30px;
+          color: #fff;
+          border-radius: 50px;
           text-align: center;
-          cursor: pointer;
-          z-index: 1000;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          font-size: 30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 999;
+        }
+        .whats-app {
+          margin-top: 16px;
         }
 
-        .whatsapp-icon:hover {
-          background-color: #128c7e; /* Darker green on hover */
+        /* for mobile */
+        @media screen and (max-width: 767px) {
+          .whats-app {
+            margin-top: 10px;
+          }
+
+          .whatsapp-icon {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 10px;
+            font-size: 22px;
+          }
         }
       `}</style>
     </div>

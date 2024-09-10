@@ -270,19 +270,29 @@
   position: relative;
   top: 2rem;
 }
-.pdf-download-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+
+.pdf-download-btn {
+  background-color: #037cb0;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
+  padding: 10px 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
-.pdf-download-button:hover {
-  background-color: #0056b3;
+.pdf-download-btn:hover {
+  background-color: #0b5ed1;
+}
+
+.pdf-download-btn:active {
+  background-color: #303df2;
+  transform: scale(0.98);
+}
+
+.pdf-download-btn:focus {
+  outline: none;
 }

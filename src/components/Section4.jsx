@@ -28,10 +28,14 @@ export default function Section4() {
           </h6>
 
           <h1>Providing innovative solutions to the Drone Industry.</h1>
-          <p>Delivering high-quality, reliable, and user-friendly drones that meet the needs of everyone.</p>
-          <Link to="/contact"> <button>CONTACT NOW</button></Link>
-          
-          
+          <p>
+            Delivering high-quality, reliable, and user-friendly drones that
+            meet the needs of everyone.
+          </p>
+          <Link to="/contact">
+            {" "}
+            <button>CONTACT NOW</button>
+          </Link>
         </div>
 
         <div className="sec4_right">
@@ -42,8 +46,17 @@ export default function Section4() {
                 <NumberAnimation n={500} inView={inView} /> +
               </p>
             </h1>
-            <p>Drones Flying</p>
+            <p>Acres of Spraying</p>
           </div>
+          {/* <div className="Sec4_Card" ref={ref}>
+            <h1>
+              <p className="bold">
+                {" "}
+                <NumberAnimation n={500} inView={inView} /> +
+              </p>
+            </h1>
+            <p>Drones Flying</p>
+          </div> */}
 
           {/* <div className="Sec4_Card" ref={ref}>
             <h1>
@@ -65,15 +78,15 @@ export default function Section4() {
             <p>Vama Team</p>
           </div>
 
-          <div className="Sec4_Card">
+          {/* <div className="Sec4_Card">
             <h1>
               <p className="bold">
                 {" "}
-                <NumberAnimation n={700} inView={inView} /> +
+                <NumberAnimation n={500} inView={inView} /> +
               </p>
             </h1>
             <p>Acres of Spraying</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

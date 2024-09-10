@@ -12,7 +12,7 @@
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
 .sectionImg {
   width: 45%;
@@ -26,7 +26,7 @@
 }
 
 .section-left-side {
-  width: 45%;
+  width: 50%;
 }
 .who {
   display: flex;

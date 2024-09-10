@@ -50,10 +50,10 @@ export default function Section1() {
             </h5>
           </div>
         </div>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           {" "}
           <button className="know-more">KNOW MORE</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

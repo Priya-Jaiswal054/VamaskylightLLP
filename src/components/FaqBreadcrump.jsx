@@ -2,12 +2,12 @@ import React from "react";
 import "../style/page2/breadcrump.css";
 import { Link } from "react-router-dom";
 
-export default function AboutBreadcrump() {
+export default function FaqBreadcrump() {
   return (
     <div className="breadcrump">
       <div className="bread-inner">
         <div className="horizontal-line"></div>
-        <h1>About Us</h1>
+        <h1>FAQ</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           possimus sapiente non facere maiores deleniti reprehenderit quam
@@ -16,8 +16,8 @@ export default function AboutBreadcrump() {
         <div className="bread-nav">
           <Link to="/">Home </Link>
           <i class="fa-solid fa-angle-right"></i>
-          <Link to="/product" className="active-bread">
-            About
+          <Link to="/faq" className="active-bread">
+            FAQs
           </Link>
         </div>
       </div>

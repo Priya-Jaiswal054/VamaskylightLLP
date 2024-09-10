@@ -49,16 +49,16 @@ export default function Section2() {
           <div className="s2-list-icons">
             <img src={Land} alt="medal" />
           </div>
-          <h2>Land Mapping</h2>
+          <h2>Disaster Management</h2>
           <p>
-            Land surveillance drones play a crucial role in various fields,
-            offering a cost-effective and efficient way to gather information,
-            monitor, and analyze vast land areas.
+            VAMA Skylight Resilience supports search and rescue operations by
+            providing aerial views of affected areas to assess and document the
+            extent of damage caused by disasters
           </p>
           <div
             className="dual-line"
             onClick={() => {
-              navigate("/land-mapping");
+              navigate("/disaster-management");
             }}
           >
             <div className="line1 "></div>

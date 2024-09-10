@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/training.css";
 import TrainingDetails from "./TrainingDetails";
-import downloadIcon from "../img/download-icon.png";
+// import downloadIcon from "../img/download-icon.png";
 import WhyChooseUs from "./WhyChooseUs";
 import caution from "../img/caution.png";
 
@@ -123,7 +123,7 @@ export default function Training() {
         </div>
       </div>
       <TrainingDetails />
-      <div className="train-download">
+      {/* <div className="train-download">
         <h3>Download the Course Details</h3>
         <button>
           {" "}
@@ -134,7 +134,7 @@ export default function Training() {
           />
           Download Brochure
         </button>
-      </div>
+      </div> */}
       <WhyChooseUs />
       <div className="train-requirement">
         <div className="tr-1">

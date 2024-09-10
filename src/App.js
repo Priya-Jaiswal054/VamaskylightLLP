@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import RTPO from "./components/RTPO";
+import Faq from "./components/Faq";
 import Footer2 from "./components/Footer2";
 import ArticleEvent from "./components/ArticleEvent";
 import GiftCityT from "./components/GiftCityT";
@@ -109,6 +110,7 @@ function App() {
             element={<ServiceTemplate props={surveyProp} />}
           ></Route> */}
           <Route path="/rpto" element={<RTPO />}></Route>
+          <Route path="/faq" element={<Faq />}></Route>
           <Route
             path="/vaghai-navsari-agricultural-university,-gujarat"
             element={<GiftCityT props={vaghaiProps} />}

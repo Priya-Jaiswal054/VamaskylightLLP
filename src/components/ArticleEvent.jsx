@@ -102,6 +102,48 @@ export default function ArticleEvent() {
                 <div className="line1 "></div>
               </div>
             </div>
+            <a
+              href="https://wa.me/918320844583" // Replace with your WhatsApp number, including the country code
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-icon"
+            >
+              <i className="fab fa-whatsapp whats-app "></i>
+            </a>
+            <style jsx>{`
+              .whatsapp-icon {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #25d366;
+                color: #fff;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 3px #999;
+                z-index: 999;
+              }
+              .whats-app {
+                margin-top: 16px;
+              }
+
+              /* for mobile */
+              @media screen and (max-width: 767px) {
+                .whats-app {
+                  margin-top: 10px;
+                }
+
+                .whatsapp-icon {
+                  width: 40px;
+                  height: 40px;
+                  bottom: 20px;
+                  right: 10px;
+                  font-size: 22px;
+                }
+              }
+            `}</style>
           </div>
         </div>
       </div>

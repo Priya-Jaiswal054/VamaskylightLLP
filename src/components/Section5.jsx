@@ -30,9 +30,12 @@ export default function Section5() {
               time. It has advanced radars for{" "}
               <strong>collision avoidance</strong>.
             </p>
-            <div className="dual-line" onClick={()=>{
-              navigate("/thea-agriculture-drone-16-litres")
-            }}>
+            <div
+              className="dual-line"
+              onClick={() => {
+                navigate("/thea-agriculture-drone-16-litres");
+              }}
+            >
               <div className="line1 "></div>
               <p>Read More</p>
               <div className="line1 "></div>
@@ -51,9 +54,12 @@ export default function Section5() {
               25 minutes. It has 2.5 acre spraying capacity in single charge.
               Comes with collision avoidance facility.
             </p>
-            <div className="dual-line" onClick={()=>{
-              navigate("/thea-agriculture-drone-10-litres")
-            }}>
+            <div
+              className="dual-line"
+              onClick={() => {
+                navigate("/thea-agriculture-drone-10-litres");
+              }}
+            >
               <div className="line1 "></div>
               <p>Read More</p>
               <div className="line1 "></div>
@@ -72,9 +78,12 @@ export default function Section5() {
               Target Locking and Tracking Mechanism with Four Deploying Drop
               Mechanism.
             </p>
-            <div className="dual-line" onClick={()=>{
-              navigate("/naina-disaster-management-drone")
-            }}>
+            <div
+              className="dual-line"
+              onClick={() => {
+                navigate("/naina-disaster-management-drone");
+              }}
+            >
               <div className="line1 "></div>
               <p>Read More</p>
               <div className="line1 "></div>
@@ -82,7 +91,7 @@ export default function Section5() {
           </div>
         </div>
 
-        <div className="Section5-card">
+        {/* <div className="Section5-card">
           <div className="Sec1-inner">
             <div className="Sec5-img">
               <img src={surveillance} alt="" />
@@ -101,7 +110,7 @@ export default function Section5() {
               <div className="line1 "></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

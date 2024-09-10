@@ -20,33 +20,22 @@ export default function Carousel() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          
           modules={[Autoplay]}
         >
           <SwiperSlide className="slides s5">
-            <div className="slides-inner">
-              
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s6">
-            <div className="slides-inner">
-              
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s7">
-            <div className="slides-inner">
-              
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s8">
-            <div className="slides-inner">
-              
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s9">
-            <div className="slides-inner">
-             
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s4">
             <div className="slides-inner">
@@ -55,23 +44,14 @@ export default function Carousel() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s1">
-            <div className="slides-inner">
-              {" "}
-              
-            </div>
+            <div className="slides-inner"> </div>
           </SwiperSlide>
           <SwiperSlide className="slides s2">
-            <div className="slides-inner">
-             
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
           <SwiperSlide className="slides s3">
-            <div className="slides-inner">
-              
-            </div>
+            <div className="slides-inner"></div>
           </SwiperSlide>
-          
-          
         </Swiper>
       </>
     </div>
